@@ -1,0 +1,39 @@
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.gallery{
+    width: 75%;
+
+}
+
+
+.layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+    
+  
+
+  .title{
+    margin-bottom: -40px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(95, 95, 95);
+    
+    
+}
+
+.title h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+

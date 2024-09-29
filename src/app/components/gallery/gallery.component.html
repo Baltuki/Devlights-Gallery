@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="container">
+<div class="gallery">
+  <div class="title">
+    <h1>Memories</h1>
+  </div>
+  <div class="layout">
+        <app-image-card 
+      *ngFor="let image of images" 
+      [imageCard]="image"  (click)="onSelectImage(image)">
+    </app-image-card> 
+  </div>
+</div>
+  </div>
+  <app-image-zoom [selectedImage]="selectedImage"   [images]="images" (closeZoom)="closeImageZoom()"></app-image-zoom>
+  
+
+

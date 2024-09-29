@@ -1,0 +1,9 @@
+<div *ngIf="selectedImage" class="image-zoom-container">
+    <button class="nav-button prev" (click)="previousImage()">&#8249;</button> 
+    
+    <div class="image-wrapper">
+      <img [src]="selectedImage.url" [alt]="selectedImage" class="zoomed-image" />
+    </div>
+    
+    <button class="nav-button next" (click)="nextImage()">&#8250;</button> 
+  
