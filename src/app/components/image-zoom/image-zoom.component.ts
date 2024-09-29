@@ -18,7 +18,7 @@ export class ImageZoomComponent {
   
     @Input() selectedImage: ImageCard | null = null;
     @Input() images: ImageCard[] = [];
-    @Output() closeZoom = new EventEmitter<void>();  // Evento para notificar al padre que se debe cerrar
+    @Output() closeZoom = new EventEmitter<void>();  
 
     
     previousImage(): void {
@@ -29,7 +29,7 @@ export class ImageZoomComponent {
       }
     }
   
-    // Función para cambiar a la imagen siguiente
+  
     nextImage(): void {
       if (this.selectedImage && this.images.length > 0) {
         const currentIndex = this.images.findIndex(img => img.id === this.selectedImage?.id);
@@ -38,14 +38,12 @@ export class ImageZoomComponent {
       }
     }
   
-  // Función para cerrar el visor
   close(): void {
-    this.closeZoom.emit();  // Notifica al componente padre para ocultar el zoom
+    this.closeZoom.emit();  
   }
 
-  // Manejador del evento de teclado
   @HostListener('document:keydown.escape', ['$event'])
   handleEscapeKey(event: KeyboardEvent): void {
-    this.close();  // Llama a la función de cierre cuando se presiona la tecla Escape
+    this.close();  
   }
 }

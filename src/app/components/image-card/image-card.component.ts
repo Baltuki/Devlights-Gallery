@@ -12,5 +12,5 @@ import { ImageCard } from './image.model';
   styleUrl: './image-card.component.css'
 })
 export class ImageCardComponent {
-  @Input() imageCard!: Image; // Recibe la imagen como un @Input desde el componente padre
+  @Input() imageCard!: Image; 
 }

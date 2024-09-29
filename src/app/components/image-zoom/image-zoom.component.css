@@ -11,7 +11,7 @@
     z-index: 1000;
   }
   
-  .image-wrapper {
+  .image-container {
     max-width: 90%;
     max-height: 90%;
     text-align: center;
@@ -23,8 +23,6 @@
     margin-bottom: 20px;
   }
   
-
-  
   .prev {
     left: 20px;
   }
@@ -32,8 +30,6 @@
   .next {
     right: 20px;
   }
-  
-  
   
   .nav-button {
     background-color: transparent;
